@@ -1,0 +1,11 @@
+La luz tiene que brillar cuando se hace clic.
+
+Todo el propósito del componente es mostrar un semáforo con luces de lectura, amarillas y verdes.
+
+Cuando se hace clic (se selecciona) alguna luz, ésta debe brillar, pero las otras luces deben dejar de brillar.
+
+El componente debe tener un estado que almacene el color actual que debe brillar, por eso debes usar el hook useState de la siguiente manera:
+const [ color, setColor] = useState("red");
+
+Utiliza ReactDOM.render para procesar el componente en el DOM de esta manera:
+ReactDOM.render(<TrafficLight />, document.querySelector('#app'));
